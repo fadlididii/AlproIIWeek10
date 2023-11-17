@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img { width: 300px; height: auto; }
+        h1 { text-align: center;}
+        .container { width: 80%; margin: auto; }
+        .cat {margin-bottom: 20px;}
+        li {font-size: 23px;}
+    </style>
+</head>
+<body>
+    <h1>My Cat</h1>
+    <div class="container">
+        <!-- Bolu -->
+        <div class="cat">
+            <img src="{{ url_for('static', filename='bolu.jpg') }}">
+            <li>Nama : Bolu</li>
+            <li>Tempat/Tgl Lahir : Bekasi 17 November 2021</li>
+            <li>Jenis Kelamin : Jantan</li>
+            <li>Status Perkawinan : Belum Kawin</li>
+            <li>Makanan Favorit : segala</li>
+            <li>Pekerjaan : Tidur, Makan</li>
+            <li>Hobi : Pup sembarangan</li>
+        </div>
+
+        <!-- Ceuceu -->
+        <div class="cat">
+            <img src="{{ url_for('static', filename='ceuceu.jpg') }}">
+            <li>Nama : Ceuceu</li>
+            <li>Tempat/Tgl Lahir : Bandung 1 Januari 2020</li>
+            <li>Jenis Kelamin : Betina</li>
+            <li>Status Perkawinan : Belum Kawin</li>
+            <li>Makanan Favorit : Mee-O</li>
+            <li>Pekerjaan : Nangkep cicak</li>
+            <li>Hobi : Kabur</li>
+        </div>
+    </div>
+</html>

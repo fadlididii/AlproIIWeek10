@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Form and Display Data</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .form-container, .response-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Added to fix padding issue */
+        }
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+        .response-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .response-table th,
+        .response-table td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        .response-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Submit Form</h2>
+    <form action="/form/" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="nIM">NIM:</label><br>
+        <input type="text" id="nIM" name="nIM"><br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if form_data %}
+        <h3>Submitted Data:</h3>
+        <table class="response-table">
+            <tr>
+                <th>Name</th>
+                <td>{{ form_data['name'] }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ form_data['email'] }}</td>
+            </tr>
+            <tr>
+                <th>NIM</th>
+                <td>{{ form_data['nIM'] }}</td>
+            </tr>
+        </table>
+    {% endif %}
+</body>
+</html>

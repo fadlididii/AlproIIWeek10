@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F1 Teams and Cars</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; }
+        .team-container { margin-bottom: 20px; }
+        .team-title { font-weight: bold; }
+        .team-info { margin-left: 20px; }
+        .team-header { color: #333; }
+        img { width: 400px; height: auto; }
+        li {font-size: 18px;}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formula 1 Teams - 2023 Season</h1>
+
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Mercedes-AMG Petronas</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='merc.jpg') }}">
+                <li>Drivers: Lewis Hamilton, George Russell</li>
+                <li>Team Principal: Toto Wolff</li>
+                <li>Country: United Kingdom</li>
+                <li>Engine: Mercedes</li>
+                <li>Constructors' World Championships: 8 (2014-2021)</;>
+            </div>
+        </div>
+    
+        <!-- Red Bull Racing -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Red Bull Racing</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='redbull.jpeg') }}">
+                <li>Drivers: Max Verstappen, Sergio Pérez</li>
+                <li>Team Principal: Christian Horner</li>
+                <li>Country: United Kingdom</li>
+                <li>Engine: Red Bull Powertrains</li>
+                <li>Constructors' World Championships: 4 (2010-2013)</li>
+            </div>
+        </div>
+
+        <!-- Scuderia Ferrari -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Scuderia Ferrari</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='ferrari.jpg') }}">
+                <li>Drivers: Charles Leclerc, Carlos Sainz</li>
+                <li>Team Principal: Frédéric Vasseur</li>
+                <li>Country: Italy</li>
+                <li>Engine: Ferrari</li>
+                <li>Constructors' World Championships: 16 (most recently in 2008)</li>
+            </div>
+        </div>
+
+        <!-- Mclaren F1 Team -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">McLaren F1 Team</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='mclaren.jpg') }}">
+                <li>Drivers: Lando Noris, Oscar Piastri</li>
+                <li>Team Principal: Andrea Stella</li>
+                <li>Country: United Kingdom</li>
+                <li>Engine: Mercedes</li>
+                <li>Constructors' World Championships: 8 times (last in 1998)</li>
+            </div>
+        </div>
+
+        <!-- Alpine F1 Team -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Alpine F1 Team</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='alpine.jpg') }}">
+                <li>Drivers: Esteban Ocon, Piere Gasly</li>
+                <li>Team Principal: Bruno Famin</li>
+                <li>Country: Enstone, United Kingdom</li>
+                <li>Engine: Renault</li>
+                <li>Constructors' World Championships: 2 times as Renault (2005, 2006)</li>
+            </div>
+        </div>
+
+        <!-- Aston Martin F1 Team -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Aston Martin F1 Team</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='aston.jpg') }}">
+                <li>Drivers: Fernando Alonso, Lance Stroll</li>
+                <li>Team Principal: Mike Krack</li>
+                <li>Country: Silverstone, United Kingdom</li>
+                <li>Engine: Mercedes</li>
+                <li>Constructors' World Championships: 0</li>
+            </div>
+        </div>
+
+        <!-- Wiliams Racing -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Wiliams Racing</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='williams.jpg') }}">
+                <li>Drivers: Alex Albon, Logan Sargeant</li>
+                <li>Team Principal: James Vowles</li>
+                <li>Country: Grove, United Kingdom</li>
+                <li>Engine: Mercedes</li>
+                <li>Constructors' World Championships: 9 times (last in 1997)</li>
+            </div>
+        </div>
+
+        <!-- Haas F1 Team -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Haas F1 Team</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='haas.jpg') }}">
+                <li>Drivers: Kevin Magnussen, Nico Hulkenberg</li>
+                <li>Team Principal: Günther Steiner</li>
+                <li>Country: Kannapolis, United States</li>
+                <li>Engine: Ferrari</li>
+                <li>Constructors' World Championships: 0</li>
+            </div>
+        </div>
+
+        <!-- Alfa Romeo F1 Team ORLEN -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Alfa Romeo F1 Team ORLEN</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='alfa.jpg') }}">
+                <li>Drivers: Valtteri Bottas, Zhou Guanyu</li>
+                <li>Team Principal: Frédéric Vasseur</li>
+                <li>Country: Switzerland</li>
+                <li>Engine: Ferrari</li>
+                <li>Constructors' World Championships: 0</li>
+            </div>
+        </div>
+
+        <!-- Scuderia AlphaTauri -->
+        <div class="team-container">
+            <div class="team-title"></div>
+            <h2 class="team-header">Scuderia AlphaTauri</h2>
+            <div class="team-info">
+                <img src="{{ url_for('static', filename='alpha.jpg') }}">
+                <li>Drivers: Daniel Ricciardo, Yuki Tsunoda</li>
+                <li>Team Principal: Franz Tost</li>
+                <li>Country: Faenza, Italy</li>
+                <li>Engine: Red Bull Powertrains (Honda in partnership)</li>
+                <li>Constructors' World Championships: 0</li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
